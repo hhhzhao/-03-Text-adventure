@@ -8,25 +8,29 @@ assert sys.version_info >= version, "This script requires at least Python {0}.{1
 logging.basicConfig(format='[%(filename)s:%(lineno)d] %(message)s', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-def render(world, current_location):
-    room = world[current_location]
-    print(room['name'])
-    print(room['desc'])
+def render(game,current):
+    r= game['rooms']
+    c=r[current]
+    print('\n\nYou are in the {name}'.format(name=c['name']))
+    print(c['desc'])
+
     '''print out the description of the current location'''
-    return True
 
 
-
-def check_input():
-    '''request input from the player, validate the input. '''
-    user_input = input("What would you like to do?")
-    #do we want to validate?
-    return True
+def getInput():
+    toReturn=input('\nWhat would you like to do? ').strip().upper()
+    return toReturn
 
 
-def update():
+def update(selection,game,current):
     '''check if we need to move to a new location, etc. '''
-    return True
+    for e in game['rooms'][current]['exits']:
+        if e['verb'] == selection:
+            if e['target'] == 'NoExit':
+                print("You can't go that way")
+            else:
+                current = e['target']
+    return current
 
 
 def main():
@@ -38,12 +42,9 @@ def main():
     current = 'WHOUS'
     quit = False
     while not quit:
-        #render the world
-        render(game['rooms'],current)
-        #check for player input
-        user_input = check_input()
-        #update the state of the world
-            
+       render(game,current)
+       selection=getInput()
+       current=update(selection,game,current)
 
     return True
 
