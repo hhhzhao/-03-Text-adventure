@@ -44,6 +44,9 @@ def main():
     while not quit:
        render(game,current)
        selection=getInput()
+       if selection == "QUIT":
+           print("Thanks for playing!")
+           break
        current=update(selection,game,current)
 
     return True
