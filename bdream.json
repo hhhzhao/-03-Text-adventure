@@ -134,6 +134,18 @@
       }
     ],
     "rooms": {
+      "WELCOME": {
+        "name": "Your Nightmare",
+        "desc": "You just fell asleep. Entering your nightmare. There is a building in front of you. The only choice is 'Enter'",
+        "exits": [
+          {
+            "verb": "ENTER",
+            "target": "FSTFLR",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
       "FSTFLR": {
         "name": "The First Floor",
         "desc": "You are in the first floor, there are lots of animals.",
@@ -151,6 +163,33 @@
           {
             "verb": "WEST",
             "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "BTHROOM",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BTHROOM": {
+        "name": "Bathroom",
+        "desc": "You are in the bathroom, a giraffe is watching you.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "Noexit",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "FSTFLR",
             "condition": ""
           },
           {

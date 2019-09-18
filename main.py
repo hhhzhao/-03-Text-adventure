@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 def render(game,current):
     r= game['rooms']
     c=r[current]
-    print('\n\nYou are in the {name}'.format(name=c['name']))
+    print('\n\nWelcome to {name}'.format(name=c['name']))
     print(c['desc'])
 
     '''print out the description of the current location'''
@@ -39,7 +39,7 @@ def main():
         game = json.load(json_file)
     # Your game goes here!
 
-    current = 'FSTFLR'
+    current = 'WELCOME'
     quit = False
     while not quit:
        render(game,current)
