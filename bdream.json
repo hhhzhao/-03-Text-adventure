@@ -1,0 +1,355 @@
+{
+    "verbs": [
+      {
+        "v": "EXITS",
+        "map": "EXITS"
+      },
+      {
+        "v": "QUIT",
+        "map": "QUIT"
+      },
+      {
+        "v": "Q",
+        "map": "QUIT"
+      },
+      {
+        "v": "GET ME OUT OF HERE!",
+        "map": "QUIT"
+      },
+      {
+        "v": "NORTH",
+        "map": "NORTH"
+      },
+      {
+        "v": "N",
+        "map": "NORTH"
+      },
+      {
+        "v": "SOUTH",
+        "map": "SOUTH"
+      },
+      {
+        "v": "S",
+        "map": "SOUTH"
+      },
+      {
+        "v": "EAST",
+        "map": "EAST"
+      },
+      {
+        "v": "E",
+        "map": "EAST"
+      },
+      {
+        "v": "WEST",
+        "map": "WEST"
+      },
+      {
+        "v": "W",
+        "map": "WEST"
+      },
+      {
+        "v": "NE",
+        "map": "NE"
+      },
+      {
+        "v": "NORTHEAST",
+        "map": "NE"
+      },
+      {
+        "v": "NW",
+        "map": "NW"
+      },
+      {
+        "v": "NORTHWEST",
+        "map": "NW"
+      },
+      {
+        "v": "SE",
+        "map": "SE"
+      },
+      {
+        "v": "SOUTHEAST",
+        "map": "SE"
+      },
+      {
+        "v": "SOUTHWEST",
+        "map": "SW"
+      },
+      {
+        "v": "UP",
+        "map": "UP"
+      },
+      {
+        "v": "U",
+        "map": "UP"
+      },
+      {
+        "v": "DOWN",
+        "map": "DOWN"
+      },
+      {
+        "v": "D",
+        "map": "DOWN"
+      },
+      {
+        "v": "ENTER",
+        "map": "ENTER"
+      },
+      {
+        "v": "OUT",
+        "map": "OUT"
+      },
+      {
+        "v": "EXIT",
+        "map": "EXIT"
+      },
+      {
+        "v": "LEAVE",
+        "map": "LEAVE"
+      },
+      {
+        "v": "LAND",
+        "map": "LAND"
+      },
+      {
+        "v": "#!#!#",
+        "map": "#!#!#"
+      },
+      {
+        "v": "LAUNC",
+        "map": "LAUNC"
+      },
+      {
+        "v": "CROSS",
+        "map": "CROSS"
+      },
+      {
+        "v": "TAKE",
+        "map": "TAKE"
+      },
+      {
+        "v": "GET",
+        "map": "TAKE"
+      }
+    ],
+    "rooms": {
+      "FSTFLR": {
+        "name": "The First Floor",
+        "desc": "You are in the first floor, there are lots of animals.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "SCDFLR",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "INFERNO",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "SCDFLR": {
+        "name": "The Second Floor",
+        "desc": "You are in the second floor right now, there are many computers on the floor.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "FSTFLR",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CPTLAB",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "THRDFLR",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "THRDFLR": {
+        "name": "The Third Floor",
+        "desc": "You are in the third floor right now, there are many cars crashing each other.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "SCDFLR",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "COURT",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "HEAVEN",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "BANK",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BANK": {
+        "name": "The Bank",
+        "desc": "You are in the bank now, you are going to be robbed.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "THRDFLR",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "COURT": {
+        "name": "The  Court",
+        "desc": "You are in the Court right now, people who crashed the car will be punished here.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "THRDFLR",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CPTLAB": {
+        "name": "Computer Lab",
+        "desc": "You are now in the computer lab, there are lots of people playing league of legends",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "SCDFLR",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "NoEXit",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "INFERNO": {
+        "name": "Inferno",
+        "desc": "Congratulation! You are in the inferno, you will be sent to the pot soon.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "SCDFLR",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "NoEXit",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "HEAVEN": {
+        "name": "HEAVEN",
+        "desc": "Congratulations! You are on the way to heaven. You will be a cute angel.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "THRDFLR",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      }
+    }
+  }
+  

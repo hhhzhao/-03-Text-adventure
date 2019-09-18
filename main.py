@@ -35,11 +35,11 @@ def update(selection,game,current):
 
 def main():
     game = {}
-    with open('zork.json') as json_file:
+    with open('bdream.json') as json_file:
         game = json.load(json_file)
     # Your game goes here!
 
-    current = 'WHOUS'
+    current = 'FSTFLR'
     quit = False
     while not quit:
        render(game,current)
