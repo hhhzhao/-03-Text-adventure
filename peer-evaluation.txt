@@ -1,0 +1,47 @@
+Name: Larry Hollins Jr.
+Date: Oct. 9, 2019 (very late, sorry!!)
+Project: 03 ~ Text Adventure
+Peer's repository: Hua Zhao @ https://github.com/hhhzhao/03-Text-adventure
+------------------------------------------------------------------------------------------------------------
+What is something you learned by reviewing your peer's project?
+
+ > I learned that you could keep the .json as one document and simply refer back to it.
+    (This is probably common knowledge, but I'm bad at doing things.)
+ > What's more, I saw that you could simply render the whole message with a single command!
+    (Hua did this with a render() command and it actually blew my mind.)
+------------------------------------------------------------------------------------------------------------
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+
+ > I want to be able to develop the initiative to make functions that can make everything more
+   concise.  My own code is rather massive, and the area that renders what the players sees and
+   knows is rather messy...
+    (To be fair, I never ultimately finished it, but that probably wouldn't have changed.)
+------------------------------------------------------------------------------------------------------------
+What suggestions would you have for your peer to improve his/her code?
+
+ > My only suggestion is to give a bit more flavor to the areas.  Have a "look" function that could give the player
+   more detail as to what the place actually is or looks like beyond the opening impression.
+------------------------------------------------------------------------------------------------------------
+What could have been clearer or better commented?
+
+ > In the render function, the docstring would have been easier to find and absorb if it were in
+   the first line of the body, but that's a nitpick; most everything is clear as is.
+------------------------------------------------------------------------------------------------------------
+Was there anything in the code that was confusing to you? If so, what?
+
+ > I was confused by how logging works, but that's just because I probably don't have a good understanding of it.
+   I trust that it was used well here.
+------------------------------------------------------------------------------------------------------------
+Does the repository contain an appropriate LICENSE?
+
+ > It does; the right name's there and everything.
+------------------------------------------------------------------------------------------------------------
+What is something he/she could add to the README.md to make it more descriptive?
+
+ > It's decent as is, but if I had to suggest something, you could probably give a bit more detail on how
+   you came to accomplish what you did.
+------------------------------------------------------------------------------------------------------------
+Pay a compliment to your peer based on the quality of his/her code.
+
+ > I love how succinct and neat everything is.  You did stuff I couldn't have hoped to at the
+   time (like the render() function).  Good work!
